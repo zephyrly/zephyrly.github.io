@@ -1,34 +1,38 @@
 lockfileVersion: 5.3
 
 specifiers:
-  hexo: ^6.3.0
+  hexo: 6.1.0
   hexo-deployer-git: ^4.0.0
   hexo-generator-archive: ^2.0.0
   hexo-generator-category: ^2.0.0
   hexo-generator-index: ^3.0.0
   hexo-generator-tag: ^2.0.0
+  hexo-log: ^4.0.1
   hexo-renderer-ejs: ^2.0.0
   hexo-renderer-marked: ^6.0.0
   hexo-renderer-pug: ^3.0.0
   hexo-renderer-stylus: ^3.0.0
   hexo-server: ^3.0.0
-  hexo-theme-butterfly: ^4.8.5
+  hexo-theme-butterfly: 4.8.0
   hexo-theme-landscape: ^1.0.0
+  hexo-util: ^3.0.1
 
 dependencies:
-  hexo: 6.3.0
+  hexo: 6.1.0
   hexo-deployer-git: 4.0.0
   hexo-generator-archive: 2.0.0
   hexo-generator-category: 2.0.0
   hexo-generator-index: 3.0.0
   hexo-generator-tag: 2.0.0
+  hexo-log: 4.0.1
   hexo-renderer-ejs: 2.0.0
   hexo-renderer-marked: 6.0.0
   hexo-renderer-pug: 3.0.0
   hexo-renderer-stylus: 3.0.0
   hexo-server: 3.0.0
-  hexo-theme-butterfly: 4.8.5
+  hexo-theme-butterfly: 4.8.0
   hexo-theme-landscape: 1.0.0
+  hexo-util: 3.0.1
 
 packages:
 
@@ -451,6 +455,14 @@ packages:
       entities: 2.2.0
     dev: false
 
+  /dom-serializer/2.0.0:
+    resolution: {integrity: sha512-wIkAryiqt/nV5EQKqQpo3SToSOV9J0DnbJqwK7Wv/Trc92zIAYZ4FlMu+JPFW1DfGFt81ZTCGgDEabffXeLyJg==}
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      entities: 4.5.0
+    dev: false
+
   /domelementtype/2.3.0:
     resolution: {integrity: sha512-OLETBj6w0OsagBwdXnPdN0cnMfF9opN69co+7ZrbfPGrdpPVNBUj02spi6B1N7wChLQiPn4CSH/zJvXw56gmHw==}
     dev: false
@@ -469,6 +481,13 @@ packages:
       domelementtype: 2.3.0
     dev: false
 
+  /domhandler/5.0.3:
+    resolution: {integrity: sha512-cgwlv/1iFQiFnU96XXgROh8xTeetsnJiDsTc7TYCLFd9+/WNkIqPTxiM/8pSd8VIrhXGTf1Ny1q1hquVqDJB5w==}
+    engines: {node: '>= 4'}
+    dependencies:
+      domelementtype: 2.3.0
+    dev: false
+
   /dompurify/2.4.5:
     resolution: {integrity: sha512-jggCCd+8Iqp4Tsz0nIvpcb22InKEBrGz5dw3EQJMs8HPJDsKbFIO3STYtAvCfDx26Muevn1MHVI0XxjgFfmiSA==}
     dev: false
@@ -479,6 +498,14 @@ packages:
       dom-serializer: 1.4.1
       domelementtype: 2.3.0
       domhandler: 4.3.1
+    dev: false
+
+  /domutils/3.1.0:
+    resolution: {integrity: sha512-H78uMmQtI2AhgDJjWeQmHwJJ2bLPD3GMmO7Zja/ZZh84wkm+4ut+IUnUdRa8uCGX88DiVx1j6FRe1XfxEgjEZA==}
+    dependencies:
+      dom-serializer: 2.0.0
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
     dev: false
 
   /ee-first/1.1.1:
@@ -849,8 +876,8 @@ packages:
       serve-static: 1.15.0
     dev: false
 
-  /hexo-theme-butterfly/4.8.5:
-    resolution: {integrity: sha512-r9b+2tXXjmnUjIivSakX1U9s7b7xYJog7C8UHS+Z7eXRwsk78QLTWiYAV29IV52Ui9H+Ia9yxoq3vptiSkrMoA==}
+  /hexo-theme-butterfly/4.8.0:
+    resolution: {integrity: sha512-spYbVbXcasdg+RZLSBAF1gpkVuItAM3nZzruCJJ+MFkUH6pGhCuOt+8SRa+Wk58gy5w/7YTMom2ZTeON+yzwsw==}
     dependencies:
       hexo-renderer-pug: 3.0.0
       hexo-renderer-stylus: 2.1.0
@@ -876,8 +903,22 @@ packages:
       strip-indent: 3.0.0
     dev: false
 
-  /hexo/6.3.0:
-    resolution: {integrity: sha512-4Jq+rWd8sYvR1YdIQyndN/9WboQ/Mqm6eax8CjrjO+ePFm2oMVafSOx9WEyJ42wcLOHjfyMfnlQhnUuNmJIpPg==}
+  /hexo-util/3.0.1:
+    resolution: {integrity: sha512-ri3WsEUWSfrjydYPeOaWvrYIzfVBiaXUy0846051MkuJxBcNtG2o87q0KFGiniSMmi0XxLQhSl415anU3+FFlA==}
+    engines: {node: '>=14'}
+    dependencies:
+      bluebird: 3.7.2
+      camel-case: 4.1.2
+      cross-spawn: 7.0.3
+      deepmerge: 4.3.1
+      highlight.js: 11.8.0
+      htmlparser2: 8.0.2
+      prismjs: 1.29.0
+      strip-indent: 3.0.0
+    dev: false
+
+  /hexo/6.1.0:
+    resolution: {integrity: sha512-TeV2cN61CD2C1GKczJRR3tdZhR3JUQi8wtS4eIgkDOeDYWTmovPoSCcc8jvh42D3fehOPp6E81fTeyjh39QWtA==}
     engines: {node: '>=12.13.0'}
     hasBin: true
     dependencies:
@@ -928,6 +969,15 @@ packages:
       domhandler: 4.3.1
       domutils: 2.8.0
       entities: 3.0.1
+    dev: false
+
+  /htmlparser2/8.0.2:
+    resolution: {integrity: sha512-GYdjWKDkbRLkZ5geuHs5NY1puJ+PXwP7+fHPRz06Eirsb9ugf6d8kkXav6ADhcODhFFPMIXyxkxSuMf3D6NCFA==}
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      domutils: 3.1.0
+      entities: 4.5.0
     dev: false
 
   /http-errors/2.0.0:
